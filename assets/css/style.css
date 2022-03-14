@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto&display=swap");
+@import url("footer.css");
+@import url("header.css");
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  height: 100%;
+  background: ;
+}
+
+.container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 30px 500px 300px;
+  grid-template-rows: 100px 600px 100px;
+  grid-template-areas:
+  "hd hd hd hd hd hd hd hd"
+  "sd  sd main main main main main main"
+  "ft ft ft ft ft ft ft ft";
+  border: 2px solid yellow; 
+}
+
+.box {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  border: 1px solid #d3d3d3;
+}
+
+
+.sidebar {
+  grid-area: sd;
+  padding: 20px;
+  align-items: center;
+}
+
+.content{
+  grid-area: main;
+  justify-content: left;
+  margin-top: 45px;
+  margin-left: 20px;
+  margin-right: 40px;
+}
+
+
+.btn {
+  border: none;
+  color: white;
+  padding: 6px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: blue;
+}
+
+@media (min-width: 300px) and (max-width:600px) {
+    .container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 600px;
+  grid-template-rows: 300px;
+  grid-template-areas:
+  "hd"
+  "sd"
+  "main"
+  "ft ";
+  /*border: 2px solid yellow; */
+  border: 1px solid yellow;
+}
+
+.box {
+  display: flex;
+  justify-content: left;
+
+}
+.content {
+  grid-area: main;
+  
+}
+
+.sidebar {
+  grid-area: sd;
+  padding: 20px;
+}
+
+p {
+  text-align: justify;
+}
+.card-heading, .card-body, .card-text{
+  align-content: center;
+  margin: 10px;
+}
+
+ }
+
+ @media (min-width: 601px) and (max-width:1100px) {
+  .container {
+  display: grid;
+  width: 80%;
+  grid-template-columns: 300px;
+  grid-template-rows: 100px 900px 100px;
+  grid-template-areas:
+  "hd hd hd hd hd hd hd hd"
+  "sd  sd main main main main main main"
+  "ft ft ft ft ft ft ft ft";
+  border: 2px solid yellow; 
+}
+ }
+
+

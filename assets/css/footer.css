@@ -1,0 +1,9 @@
+.footer {
+  grid-area: ft;
+  background-color: #738892;
+}
+
+.foot {
+  margin-top: 20px;
+  font-size: 40px;
+}
